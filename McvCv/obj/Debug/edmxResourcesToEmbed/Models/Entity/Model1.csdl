@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dinamikCvDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tblAboutMe">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="surname" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="address" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="phone" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="mail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="picture" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TblAdmin">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="username" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="password" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TblCertifications">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="description" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="date" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TblContact">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name_surname" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Name="mail" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Name="topic" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="message" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="date" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityType Name="TblEducation">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="title" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="subtitle1" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="subtitle2" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="GNO" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="date" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TblExperience">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="title" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="subtitle" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="date" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TblInterests">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="description1" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="description2" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TblSkills">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="skills" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ratio" Type="Byte" />
+  </EntityType>
+  <EntityContainer Name="dinamikCvDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tblAboutMe" EntityType="Self.tblAboutMe" />
+    <EntitySet Name="TblAdmin" EntityType="Self.TblAdmin" />
+    <EntitySet Name="TblCertifications" EntityType="Self.TblCertifications" />
+    <EntitySet Name="TblContact" EntityType="Self.TblContact" />
+    <EntitySet Name="TblEducation" EntityType="Self.TblEducation" />
+    <EntitySet Name="TblExperience" EntityType="Self.TblExperience" />
+    <EntitySet Name="TblInterests" EntityType="Self.TblInterests" />
+    <EntitySet Name="TblSkills" EntityType="Self.TblSkills" />
+    <EntitySet Name="TblSocialMedia" EntityType="dinamikCvDBModel.TblSocialMedia" />
+  </EntityContainer>
+  <EntityType Name="TblSocialMedia">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="link" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="icon" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>

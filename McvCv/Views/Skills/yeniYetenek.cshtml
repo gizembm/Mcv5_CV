@@ -1,0 +1,19 @@
+﻿@model McvCv.Models.Entity.TblSkills
+@{
+    ViewBag.Title = "yeniYetenek";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<h4>Yeni Yetenek Ekleme Sayfası</h4>
+<br />
+<form method="post">
+    @Html.Label("Yetenek")
+    @Html.TextBoxFor(x => x.skills, new { @class = "form-control" })
+    <br />
+    @Html.Label("Derece")
+    @Html.TextBoxFor(x => x.ratio, new { @class = "form-control" })
+    <br />
+ <button class="btn btn-info">Kaydet</button>
+</form>
+

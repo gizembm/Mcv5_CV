@@ -1,0 +1,39 @@
+﻿@using McvCv.Models.Entity
+@model List<tblAboutMe>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<h2>Profil Düzenleme Sayfası</h2>
+<br />
+
+<form method="post">
+    @foreach (var item in Model)
+    {
+        <label>Ad</label>
+        <input type="text" name="name" value="@item.name" class="form-control" />
+        <br />
+        <label>Soyad</label>
+        <input type="text" name="surname" value="@item.surname" class="form-control" />
+        <br />
+        <label>Adres</label>
+        <input type="text" name="address" value="@item.address" class="form-control" />
+        <br />
+        <label>Telefon No</label>
+        <input type="text" name="phone" value="@item.phone" class="form-control" />
+        <br />
+        <label>Mail Adresi</label>
+        <input type="text" name="mail" value="@item.mail" class="form-control" />
+        <br />
+        <label>Resim</label>
+        <input type="text" name="picture" value="@item.picture" class="form-control" />
+        <br />
+        <label>Açıklama</label>
+        <textarea rows="8" class="form-control" name="description">@item.description</textarea>
+    }
+    <br />
+    <button class="btn btn-success">Güncelle</button>
+</form>
+

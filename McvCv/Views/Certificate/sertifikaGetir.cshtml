@@ -1,0 +1,26 @@
+﻿@model McvCv.Models.Entity.TblCertifications
+@{
+    ViewBag.Title = "sertifikaGetir";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<h4>Sertifika Güncelleme Sayfası</h4>
+<br />
+<form method="post">
+
+    <br />
+    @Html.Label("Sertifika")
+    @Html.TextBoxFor(x => x.description, new { @class = "form-control" })
+    <br />
+    @Html.Label("Alınma Tarihi")
+    @Html.TextBoxFor(x => x.date, new { @class = "form-control" })
+
+    <br />
+
+    <button class="btn btn-info">Güncelle</button>
+    <a href="/Certificate/sertifkaSil/@ViewBag.d" class="btn btn-dark">Sil</a>
+</form>
+
+
+

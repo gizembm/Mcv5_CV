@@ -1,0 +1,29 @@
+﻿@model McvCv.Models.Entity.TblEducation
+@{
+    ViewBag.Title = "egitimGuncelle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<h4>Eğitim Güncelleme Sayfası</h4>
+<br />
+<form method="post">
+    @Html.Label("Başlık")
+    @Html.TextBoxFor(x => x.title, new { @class = "form-control" })
+    <br />
+    @Html.Label("Alt Başlık1")
+    @Html.TextBoxFor(x => x.subtitle1, new { @class = "form-control" })
+    <br />
+    @Html.Label("Alt Başlık2")
+    @Html.TextBoxFor(x => x.subtitle2, new { @class = "form-control" })
+    <br />
+    @Html.Label("GNO")
+    @Html.TextBoxFor(x => x.GNO, new { @class = "form-control" })
+    <br />
+    @Html.Label("Tarih")
+    @Html.TextBoxFor(x => x.date, new { @class = "form-control" })
+    <br />
+
+    <button class="btn btn-info">Güncelle</button>
+</form>
+

@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="dinamikCvDBModelStoreContainer" CdmEntityContainer="dinamikCvDBEntities">
+    <EntitySetMapping Name="tblAboutMe">
+      <EntityTypeMapping TypeName="dinamikCvDBModel.tblAboutMe">
+        <MappingFragment StoreEntitySet="tblAboutMe">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="surname" ColumnName="surname" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="mail" ColumnName="mail" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="picture" ColumnName="picture" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblAdmin">
+      <EntityTypeMapping TypeName="dinamikCvDBModel.TblAdmin">
+        <MappingFragment StoreEntitySet="TblAdmin">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="password" ColumnName="password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblCertifications">
+      <EntityTypeMapping TypeName="dinamikCvDBModel.TblCertifications">
+        <MappingFragment StoreEntitySet="TblCertifications">
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="description" ColumnName="description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblContact">
+      <EntityTypeMapping TypeName="dinamikCvDBModel.TblContact">
+        <MappingFragment StoreEntitySet="TblContact">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="name_surname" ColumnName="name_surname" />
+          <ScalarProperty Name="mail" ColumnName="mail" />
+          <ScalarProperty Name="topic" ColumnName="topic" />
+          <ScalarProperty Name="message" ColumnName="message" />
+          <ScalarProperty Name="date" ColumnName="date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblEducation">
+      <EntityTypeMapping TypeName="dinamikCvDBModel.TblEducation">
+        <MappingFragment StoreEntitySet="TblEducation">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="subtitle1" ColumnName="subtitle1" />
+          <ScalarProperty Name="subtitle2" ColumnName="subtitle2" />
+          <ScalarProperty Name="GNO" ColumnName="GNO" />
+          <ScalarProperty Name="date" ColumnName="date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblExperience">
+      <EntityTypeMapping TypeName="dinamikCvDBModel.TblExperience">
+        <MappingFragment StoreEntitySet="TblExperience">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="subtitle" ColumnName="subtitle" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="date" ColumnName="date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblInterests">
+      <EntityTypeMapping TypeName="dinamikCvDBModel.TblInterests">
+        <MappingFragment StoreEntitySet="TblInterests">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="description1" ColumnName="description1" />
+          <ScalarProperty Name="description2" ColumnName="description2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblSkills">
+      <EntityTypeMapping TypeName="dinamikCvDBModel.TblSkills">
+        <MappingFragment StoreEntitySet="TblSkills">
+          <ScalarProperty Name="ratio" ColumnName="ratio" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="skills" ColumnName="skills" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblSocialMedia">
+      <EntityTypeMapping TypeName="dinamikCvDBModel.TblSocialMedia">
+        <MappingFragment StoreEntitySet="TblSocialMedia">
+          <ScalarProperty Name="icon" ColumnName="icon" />
+          <ScalarProperty Name="link" ColumnName="link" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

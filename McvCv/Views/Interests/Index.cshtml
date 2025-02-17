@@ -1,0 +1,23 @@
+﻿@using McvCv.Models.Entity
+@model List<TblInterests>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<h2>Hobi Düzenleme Sayfası</h2>
+<br />
+
+<form method="post">
+    @foreach (var item in Model)
+    {
+        <label>Açıklama 1</label>
+        <textarea rows="8" class="form-control" name="description1">@item.description1</textarea>
+
+        <label>Açıklama 2</label>
+        <textarea rows="8" class="form-control" name="description2">@item.description2</textarea>
+    }
+    <br />
+    <button class="btn btn-success">Güncelle</button>
+</form>

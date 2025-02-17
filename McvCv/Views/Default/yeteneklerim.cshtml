@@ -1,0 +1,32 @@
+﻿@using McvCv.Models.Entity
+@model List<TblSkills>
+
+<div class="resume-section-content">
+    <h2 class="mb-5">Yeteneklerim</h2>
+    <div class="subheading mb-3">Programlama Dilleri & Araçlar</div>
+    <ul class="list-inline dev-icons">
+        <li class="list-inline-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfttg6RZsmKsX_e6s6fG3WS2x5yvBT62ogAA&s" alt="C#" width="65" height="65">
+            <img src="https://cdn.simpleicons.org/dotnet/512BD4" alt="Asp.Net.Mvc5" width="40" height="40">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdZxQQTow1ELaYzWtNl0m3N571qaqePj8tzA&s" alt="Mssql Veri Tabanı" width="70" height="70">
+            <img src="https://cdn.simpleicons.org/tensorflow/FF6F00" alt="Makine Öğrenmesi" width="40" height="40">
+            <img src="https://cdn.simpleicons.org/python/3776AB" alt="Python ile Veri Bilimi" width="40" height="40">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9jTNzjA80BXyIo9oXcqPUcpBY2XZmyLqTXA&s" alt="Githup" width="55" height="55">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-b3_fquPnu3uW_MPbA6jiwTF7vS5N0rcKCQ&s" alt=" HTML" width="55" height="55">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQG2bHNdIs2XhZe2NaFKZKKrhKo3rSoiK87A&s" alt=" CSS" width="55" height="55">
+        </li>
+</ul>
+    <div class="subheading mb-3">Becerilerim</div>
+    <ul class="fa-ul mb-0">
+        @foreach (var x in Model)
+        {
+            <li>
+                <span class="fa-li"><i class="fas fa-check"></i></span>
+                @x.skills
+            </li>
+        }
+
+
+
+    </ul>
+</div>
