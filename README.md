@@ -50,15 +50,19 @@ MCV5, kullanıcıların CV oluşturmasını ve kişisel bilgilerini düzenlemesi
 
 ![image](https://github.com/user-attachments/assets/2eef888a-c62c-4c7c-a035-ef22be67ff19)
 
+![image](https://github.com/user-attachments/assets/7c8dd0d1-d3f8-45a4-a354-cc6a3e29853c)
+
 ![image](https://github.com/user-attachments/assets/af2c54da-d962-4472-8416-ea62be90bef1)
+
+![image](https://github.com/user-attachments/assets/acabae82-afb7-4acf-98b8-55caf2bcf42c)
 
 ![image](https://github.com/user-attachments/assets/7bda4ff4-1862-4df6-943b-22c1e6b8f7c9)
 
 ![image](https://github.com/user-attachments/assets/eec99711-1494-467a-bda7-bb041d45ae0c)
 
-![image](https://github.com/user-attachments/assets/33bd02f9-eeb1-4145-8ea3-ec1fcb3a84ac)
-
 ![image](https://github.com/user-attachments/assets/b41f4806-5b7f-4aba-a4a9-aad914d0f9c0)
+
+![image](https://github.com/user-attachments/assets/33bd02f9-eeb1-4145-8ea3-ec1fcb3a84ac)
 
 ![image](https://github.com/user-attachments/assets/86162e85-957a-4506-8776-403d56d8fd85)
 
@@ -66,11 +70,12 @@ MCV5, kullanıcıların CV oluşturmasını ve kişisel bilgilerini düzenlemesi
 
 ![image](https://github.com/user-attachments/assets/1822655a-0729-4b52-9ccf-f219116f1b10)
 
-![image](https://github.com/user-attachments/assets/cd4daaae-3314-42ab-90dc-96a85d8c6637)
-
 ![image](https://github.com/user-attachments/assets/f298e39c-67ff-4a2f-9656-5d03645f225e)
 
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/cd4daaae-3314-42ab-90dc-96a85d8c6637)
+
+
+
 
 
 
